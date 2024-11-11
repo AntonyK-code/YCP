@@ -1,0 +1,219 @@
+/* App.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #a8e063, #56ab2f);
+}
+
+/* Main wrapper for welcome and form sections */
+.wrapper {
+  display: flex;
+  width: 80%;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+/* Left Side - Welcome Section */
+.info-section {
+  background-color: #f0f8f0;
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.info-section h1 {
+  color: #006400;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+/* Right Side - Authentication Form Section */
+.form-section {
+  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-section h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px 35px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+  border-color: #006400;
+  outline: none;
+}
+
+/* Age Confirmation and Terms */
+.age-confirmation {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.age-confirmation input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.age-confirmation a {
+  color: #006400;
+  text-decoration: none;
+}
+
+.age-confirmation a:hover {
+  text-decoration: underline;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #006400;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004d00;
+}
+
+/* Toggle Link */
+.login-link {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #006400;
+}
+
+.login-link a {
+  color: #006400;
+  text-decoration: underline;
+}
+
+.login-link a:hover {
+  text-decoration: none;
+}
+
+
+
+/* Dashboard Page Specific Styles */
+.dashboard-container {
+  width: 100%; /* Use full width */
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-header {
+  width: 100%; /* Full width for header */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5em;
+  color: #006400;
+  font-weight: bold;
+}
+
+.dashboard-header p {
+  font-size: 1.2em;
+  color: #777;
+}
+
+.dashboard-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Left side for tabs, right side for content */
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.dashboard-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dashboard-tab {
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dashboard-tab.active,
+.dashboard-tab:hover {
+  background-color: #006400;
+  color: #fff;
+}
+
+.dashboard-content {
+  padding: 20px;
+  font-size: 1.1em;
+  color: #555;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
