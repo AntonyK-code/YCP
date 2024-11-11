@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/youth-connect-platform/static/css/main.d2a6547b.css",
+    "main.js": "/youth-connect-platform/static/js/main.7fd6d275.js",
+    "index.html": "/youth-connect-platform/index.html",
+    "main.d2a6547b.css.map": "/youth-connect-platform/static/css/main.d2a6547b.css.map",
+    "main.7fd6d275.js.map": "/youth-connect-platform/static/js/main.7fd6d275.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2a6547b.css",
+    "static/js/main.7fd6d275.js"
+  ]
+}
